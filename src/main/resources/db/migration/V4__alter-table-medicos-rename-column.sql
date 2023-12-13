@@ -1,0 +1,2 @@
+ALTER TABLE medicos
+    RENAME COLUMN ATIVO TO ativo;
