@@ -20,7 +20,6 @@ public class CancelamentoDeConsulta {
 
        if(dados.motivo() != null && consulta.getData().isBefore(dataPermitida)){
           // consulta.cancelar(dados.motivo());
-           System.out.println("oi");
        }
 
     }
