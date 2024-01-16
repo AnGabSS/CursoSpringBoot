@@ -34,5 +34,22 @@ public class Consulta {
 
     private LocalDateTime data;
 
+    private boolean cancelada;
+
+    private String motivoCancelamento;
+
+    public Consulta(Long id, Medico medico, Paciente paciente, LocalDateTime data){
+        this.id = id;
+        this.medico = medico;
+        this.paciente = paciente;
+        this.data = data;
+        cancelada = false;
+    }
+
+    public void cancelar(String motivoCancelamento){
+        this.cancelada = true;
+        this.motivoCancelamento = motivoCancelamento;
+    }
+
 
 }
